@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OTT_platform_Group_5.jnlp">
+  <information>
+    <title>OTT_platform_Group_5</title>
+    <vendor>EMA</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="OTT_platform_Group_5.jar" size="8192244" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainPkg.main"  name="OTT_platform_Group_5" />
+  <update check="always"/>
+</jnlp>
