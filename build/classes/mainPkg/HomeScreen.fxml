@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.HomeScreenController">
-    
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10"
+      alignment="CENTER">
+
+    <!-- Home Button -->
+    <Button text="Home" minWidth="100" minHeight="40" />
+
+    <!-- Settings Button -->
+    <Button text="Settings" minWidth="100" minHeight="40" />
+
+    <!-- Login Button -->
+    <Button text="Login" minWidth="100" minHeight="40" />
+
+    <!-- Sign Up Button -->
+    <Button text="Sign Up" minWidth="100" minHeight="40" />
+
+    <!-- ScrollPane to make the layout scrollable -->
+    <ScrollPane fitToWidth="true" fitToHeight="true">
+        <!-- Content of the ScrollPane -->
+        <VBox spacing="10" alignment="CENTER">
+            <!-- Your additional content can go here -->
+        </VBox>
+    </ScrollPane>
+
+</VBox>
