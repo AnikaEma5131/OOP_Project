@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.SubscriberPaymentDashboardController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0">
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <Button fx:id="backButton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#backButtonOnClicked" text="Back" />
+            <Label layoutX="260.0" layoutY="20.0" text="Payment Dashboard" />
+            
+            <!-- Payment History TableView -->
+            <TableView layoutX="20.0" layoutY="105.0" prefHeight="200.0" prefWidth="560.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Serial" />
+                  <TableColumn prefWidth="150.0" text="Month" />
+                  <TableColumn prefWidth="150.0" text="Paid Money" />
+                  <!-- Add more columns as needed -->
+               </columns>
+            </TableView>
+            
+            <!-- Subscription Offers TableView -->
+            <TableView layoutX="20.0" layoutY="373.0" prefHeight="100.0" prefWidth="560.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Offer ID" />
+                  <TableColumn prefWidth="200.0" text="Offer Description" />
+                  <TableColumn prefWidth="150.0" text="Discount" />
+                  <!-- Add more columns as needed -->
+               </columns>
+            </TableView>
+               <Button fx:id="paymentHistoryButton" layoutX="20.0" layoutY="66.0" mnemonicParsing="false" onAction="#showPaymentHistoryButtonOnClicked" text="See the Payment History" />
+               <Button fx:id="offersButton" layoutX="20.0" layoutY="319.0" mnemonicParsing="false" onAction="#showOffersButtonOnClicked" text="See Subscription Offers " />
+            
+            <!-- Add more buttons or UI elements as needed -->
+         </children>
+      </AnchorPane>
+      </AnchorPane>
+   </content>
+</ScrollPane>

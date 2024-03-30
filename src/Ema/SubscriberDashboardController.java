@@ -6,7 +6,9 @@ package Ema;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 
 /**
  * FXML Controller class
@@ -14,13 +16,14 @@ import javafx.fxml.Initializable;
  * @author EMA
  */
 public class SubscriberDashboardController implements Initializable {
+    @FXML    private ComboBox<String> settingsComboBox;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        settingsComboBox.getItems().addAll("Subscription", "Payment", "Create Watchlist", "User Feedback");
     }    
     
 }
