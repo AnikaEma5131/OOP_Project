@@ -25,17 +25,17 @@
             </Label>
             <ImageView fitHeight="151.0" fitWidth="116.0" layoutX="7.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/download%20(1).jpeg" />
+                  <Image url="@../Images/download%20(5).jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="132.0" fitWidth="200.0" layoutX="12.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="147.0" fitWidth="106.0" layoutX="383.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Downloads/p8822519_v_h10_ae.jpg" />
+                  <Image url="@../Images/images.jpeg" />
                </image>
             </ImageView>
             <ImageView fitHeight="166.0" fitWidth="117.0" layoutX="126.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/download%20(2).jpeg" />
+                  <Image url="@../Images/images.jpeg" />
                </image>
             </ImageView>
             <Label layoutX="12.0" layoutY="45.0" text="Marvel" textFill="#f2ecec">
@@ -53,15 +53,25 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <ComboBox fx:id="settingsComboBox" layoutX="437.0" layoutY="16.0" prefWidth="150.0" promptText="Settings" style="-fx-background-color: black; -fx-border-color: white;" />
+            <ComboBox fx:id="settingsComboBox" layoutX="437.0" layoutY="16.0" prefWidth="150.0" promptText="Settings" style="-fx-background-color: Red; -fx-border-color: white;" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="257.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Downloads/images%20(3).jpeg" />
+                  <Image url="@../Images/images%20(3).jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="225.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="28.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../Downloads/images%20(2).jpeg" />
+                  <Image url="@../Images/download%20(4).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="97.0" fitWidth="147.0" layoutX="206.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/images%20(2).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="370.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/p8822519_v_h10_ae.jpg" />
                </image>
             </ImageView>
          </children>
