@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="804.0" stylesheets="@styles/dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.ContentManagerDashController">
+
+    <!-- Top MenuBar -->
+    <top>
+        <MenuBar prefHeight="0.0" prefWidth="750.0" style="-fx-background-color: #16436e;" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" style="-fx-background-color: silver;" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#bilingandsubmanagementOnClick" text="Billing and subscription management" />
+                        <MenuItem mnemonicParsing="false" onAction="#UpdatetermsAndPolicyMenuBarButtonOnClick" text="Subscriber Terms And Policy" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewcontentAvailibility" text="Content License and availibility" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" style="-fx-background-color: silver;" text="Navigator">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#navigateToDashboard" text="Back" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <!-- Left VBox -->
+    <left>
+        <VBox prefHeight="553.0" prefWidth="315.0" style="-fx-background-color: #16436e; -fx-border-color: red;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Header HBox -->
+                <HBox prefHeight="105.0" prefWidth="313.0">
+                    <children>
+                        <Label prefHeight="92.0" prefWidth="269.0" text="Dashboard : Content Manager" textFill="#1a9e00">
+                            <font>
+                                <Font name="Sitka Display Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true" />
+                <!-- User Information Labels -->
+                <Label fx:id="userName" prefHeight="41.0" prefWidth="313.0" text="Username:" textFill="WHITE">
+                    <font>
+                        <Font name="Sitka Display Bold" size="16.0" />
+                    </font>
+                </Label>
+                <!-- Buttons with CSS styling -->
+                <Button fx:id="UploadContentsOnCLickButton" mnemonicParsing="false" onAction="#UploadContentsOnCLick" prefHeight="38.0" prefWidth="328.0" style="-fx-background-color: #e74c3c; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Upload contents">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="RemoveConButton" mnemonicParsing="false" onAction="#RemoveConOnClick" prefHeight="41.0" prefWidth="324.0" style="-fx-background-color: #27ae60; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Remove Content">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="AdcertisementsButton" mnemonicParsing="false" onAction="#advButtonOnClick" prefHeight="38.0" prefWidth="323.0" style="-fx-background-color: #f39c12; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Advertisements">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="perReecButton" mnemonicParsing="false" onAction="#PerRecButtonOnClick" prefHeight="42.0" prefWidth="342.0" style="-fx-background-color: #3498db; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Personalized Recommendations">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+            <ImageView fitHeight="85.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="logoutt" mnemonicParsing="false" onAction="#logoutClick" prefHeight="27.0" prefWidth="316.0" style="-fx-background-color: transparent; -fx-border-color: #ff0707; -fx-text-fill: #ff0707; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Logout" textFill="#ff0707">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+    </left>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-background-color: Yellow;" text="Notifications">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="740.0" prefWidth="475.0" style="-fx-background-color: #9dc994;">
+                     <children>
+                        <VBox layoutX="6.0" layoutY="6.0" prefHeight="514.0" prefWidth="478.0">
+                           <children>
+                              <HBox prefHeight="128.0" prefWidth="464.0">
+                                 <children>
+                                    <HBox prefHeight="123.0" prefWidth="232.0" style="-fx-background-color: purple; -fx-background-radius: 37;">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label>
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Images/giphy.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="123.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="181.0" text="Contents Uploded" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="contentsCount" prefHeight="94.0" prefWidth="155.0" text="0000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Lucida Sans Demibold" size="51.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Label prefHeight="17.0" prefWidth="27.0" />
+                                    <HBox prefHeight="123.0" prefWidth="232.0" style="-fx-background-color: purple; -fx-background-radius: 37;">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label>
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Images/giphy.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="123.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="181.0" text="Subscriber Count" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="subscriberCount" prefHeight="94.0" prefWidth="155.0" text="0000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Lucida Sans Demibold" size="51.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="17.0" prefWidth="573.0" />
+                              <TableView fx:id="uploadeedContentsTableview" prefHeight="316.0" prefWidth="478.0" style="-fx-background-color: #9dc994;">
+                                <columns>
+                                  <TableColumn fx:id="uploadedContentsCol" prefWidth="213.0" text="Uploaded Contents" />
+                                  <TableColumn fx:id="dateUploadCil" prefWidth="250.0" text="Date" />
+                                </columns>
+                              </TableView>
+                              <Button mnemonicParsing="false" onAction="#LoadTableViewOnClick" prefHeight="25.0" prefWidth="481.0" style="-fx-background-color: Red;" text="Load Table " textFill="WHITE">
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="11.0" />
+                                 </font></Button>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="128.0" prefWidth="464.0" />
+                        <Button layoutX="134.0" layoutY="514.0" mnemonicParsing="false" onAction="#saveUploadedContentRecordsAsPDF" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: Red;" text="Save as PDF" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Customer Ratings and feedback">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="802.0" prefWidth="475.0" style="-fx-background-color: #9dc994;">
+                           <children>
+                              <Button fx:id="refreshCustomerfeedbacktableviewandPiChartOnClick" layoutX="24.0" layoutY="191.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="432.0" text="Refresh chart " />
+                              <TableView fx:id="deedbackTableView" layoutX="24.0" layoutY="333.0" prefHeight="423.0" prefWidth="444.0">
+                                 <columns>
+                                    <TableColumn fx:id="userIDCOl" prefWidth="145.0" text="Subscriber User ID" />
+                                    <TableColumn fx:id="feedbackCol" prefWidth="201.0" text="Feedback" />
+                                    <TableColumn fx:id="ratingCol" prefWidth="97.0" text="Rating" />
+                                 </columns>
+                              </TableView>
+                              <PieChart fx:id="customerExpRatingPieChart" layoutX="25.0" layoutY="14.0" prefHeight="172.0" prefWidth="427.0" title="Customer experience rating" />
+                              <HBox layoutX="25.0" layoutY="245.0" prefHeight="36.0" prefWidth="338.0">
+                                 <children>
+                                    <ImageView fitHeight="36.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" />
+                                    <TextField fx:id="searchByUserID" prefHeight="36.0" prefWidth="280.0" promptText="Search by USer ID" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="tablevireOnClick" layoutX="363.0" layoutY="245.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Search" />
+                              <Button fx:id="loadAllDataOnTAbleView" layoutX="25.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="441.0" text="Load all" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

@@ -4,10 +4,36 @@
  */
 package Ema;
 
-/**
- *
+import java.io.Serializable;
+
+/*
  * @author EMA
  */
-public class Content {
+public class Content implements Serializable{
+    private String Title;
+    private byte[] VideoData;
+
+    public Content(String Title, byte[] VideoData) {
+        this.Title = Title;
+        this.VideoData = VideoData;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public void setTitle(String Title) {
+        this.Title = Title;
+    }
+
+    public byte[] getVideoData() {
+        return VideoData;
+    }
+
+    public void setVideoData(byte[] VideoData) {
+        this.VideoData = VideoData;
+    }
+    
+    
     
 }
