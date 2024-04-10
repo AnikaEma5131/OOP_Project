@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
@@ -31,6 +32,8 @@ public class UploadContentsController implements Initializable {
     private DatePicker uploadDate;
     @FXML
     private ComboBox<?> contenttypecombopbox;
+    @FXML
+    private Button goback;
 
     /**
      * Initializes the controller class.
@@ -56,6 +59,19 @@ public class UploadContentsController implements Initializable {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void backButtonOnClick(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Content Manager Dashboard.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) goback.getScene().getWindow();
+            currentStage.setScene(scene);
         } catch (IOException e) {
             e.printStackTrace();
         }
