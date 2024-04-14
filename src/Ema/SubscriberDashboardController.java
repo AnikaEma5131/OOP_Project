@@ -20,7 +20,19 @@ import javafx.scene.control.ComboBox;
 public class SubscriberDashboardController implements Initializable {
 
     @FXML
-    private ComboBox<String> settingsComboBox;
+    private ComboBox<?> settingsComboBox;
+    @FXML
+    private Button paidCOntentButton;
+    @FXML
+    private Button trailersButton;
+    @FXML
+    private Button trailerInfos;
+    @FXML
+    private Button recomendButton;
+    @FXML
+    private Button BillingButton;
+    @FXML
+    private Button termsButton;
 
     /**
      * Initializes the controller class.
@@ -28,31 +40,30 @@ public class SubscriberDashboardController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
     }    
 
     @FXML
-    private void viewContentOnClick(ActionEvent event) {
+    private void paidCOntentButtonOnCLick(ActionEvent event) {
     }
 
     @FXML
-    private void viewTrailerOnClick(ActionEvent event) {
+    private void trailersButtonOnClk(ActionEvent event) {
     }
 
     @FXML
-    private void viewRecommendationOnClick(ActionEvent event) {
+    private void trailerInfosOnCLk(ActionEvent event) {
     }
 
     @FXML
-    private void goBcakOncLick(ActionEvent event) {
+    private void recomendButtonOnClk(ActionEvent event) {
     }
 
     @FXML
-    private void viewPaymentSystemOnClick(ActionEvent event) {
+    private void BillingButtonOnClk(ActionEvent event) {
     }
 
     @FXML
-    private void contactHelpCenterOnClick(ActionEvent event) {
+    private void TermsOnClicl(ActionEvent event) {
     }
     
 }
