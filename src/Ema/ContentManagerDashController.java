@@ -78,7 +78,7 @@ public class ContentManagerDashController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void bilingandsubmanagementOnClick(ActionEvent event) {
@@ -97,7 +97,7 @@ public class ContentManagerDashController implements Initializable {
     }
 
     @FXML
-    private void UploadContentsOnCLick(ActionEvent event)   {
+    private void UploadContentsOnCLick(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Upload Contents.fxml"));
             Parent root = loader.load();
@@ -119,6 +119,15 @@ public class ContentManagerDashController implements Initializable {
 
     @FXML
     private void PerRecButtonOnClick(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Personalized Recomendation.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) UploadContentsOnCLickButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -141,5 +150,5 @@ public class ContentManagerDashController implements Initializable {
             e.printStackTrace();
         }
     }
-    
+
 }
