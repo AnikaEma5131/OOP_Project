@@ -122,24 +122,15 @@ public class ContentManagerDashController implements Initializable {
     }
 
     @FXML
+    private void logoutClick(ActionEvent event) {
+    }
+
+    @FXML
     private void LoadTableViewOnClick(ActionEvent event) {
     }
 
     @FXML
     private void saveUploadedContentRecordsAsPDF(ActionEvent event) {
-    }
-
-    @FXML
-    private void logoutOnClick(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/LoginSc.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage currentStage = (Stage) logoutt.getScene().getWindow();
-            currentStage.setScene(scene);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
     
 }

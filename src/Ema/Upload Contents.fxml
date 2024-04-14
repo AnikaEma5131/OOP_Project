@@ -24,6 +24,5 @@
       <DatePicker fx:id="uploadDate" layoutX="429.0" layoutY="188.0" prefHeight="25.0" prefWidth="125.0" />
       <ComboBox fx:id="contenttypecombopbox" layoutX="341.0" layoutY="231.0" prefHeight="25.0" prefWidth="212.0" promptText="Content type" />
       <Text layoutX="348.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload date" />
-      <Button fx:id="goback" layoutX="36.0" layoutY="332.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Go Back" />
    </children>
 </AnchorPane>
