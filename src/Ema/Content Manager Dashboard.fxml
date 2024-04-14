@@ -84,11 +84,12 @@
                         <Font name="Sitka Text Bold" size="18.0" />
                     </font>
                 </Button>
-            <Button fx:id="logoutt" mnemonicParsing="false" onAction="#logoutOnClick" prefHeight="27.0" prefWidth="313.0" style="-fx-background-color: #ff507f;" text="Log Out" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font></Button>
             <ImageView fitHeight="85.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="logoutt" mnemonicParsing="false" onAction="#logoutClick" prefHeight="27.0" prefWidth="316.0" style="-fx-background-color: transparent; -fx-border-color: #ff0707; -fx-text-fill: #ff0707; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Logout" textFill="#ff0707">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
             </children>
         </VBox>
     </left>
@@ -184,7 +185,7 @@
                            </children>
                         </VBox>
                         <HBox layoutX="10.0" layoutY="10.0" prefHeight="128.0" prefWidth="464.0" />
-                        <Button layoutX="151.0" layoutY="509.0" mnemonicParsing="false" onAction="#saveUploadedContentRecordsAsPDF" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: Red;" text="Save as PDF" textFill="WHITE">
+                        <Button layoutX="134.0" layoutY="514.0" mnemonicParsing="false" onAction="#saveUploadedContentRecordsAsPDF" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: Red;" text="Save as PDF" textFill="WHITE">
                            <font>
                               <Font name="Lucida Bright Demibold" size="11.0" />
                            </font>
