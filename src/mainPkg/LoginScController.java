@@ -66,7 +66,7 @@ public class LoginScController implements Initializable {
             if (userType.equals("Content Manager")) {
 
 
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ema/ContentManagerDashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ema/Content Manager Dashboard.fxml"));
 
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
