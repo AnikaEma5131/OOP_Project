@@ -4,15 +4,11 @@
  */
 package Ema;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -20,7 +16,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -97,16 +92,7 @@ public class ContentManagerDashController implements Initializable {
     }
 
     @FXML
-    private void UploadContentsOnCLick(ActionEvent event)   {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Upload Contents.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage currentStage = (Stage) UploadContentsOnCLickButton.getScene().getWindow();
-            currentStage.setScene(scene);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void UploadContentsOnCLick(ActionEvent event) {
     }
 
     @FXML

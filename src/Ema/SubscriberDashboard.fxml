@@ -4,16 +4,15 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.SubscriberDashboardController">
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.subsDashController">
    <content>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="664.0" style="-fx-background-color: black; visibility: 50;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="671.0" style="-fx-background-color: black; visibility: 50;">
          <children>
             <Button layoutX="153.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Home" textFill="#ffffff">
                <font>
@@ -31,7 +30,7 @@
                </font>
             </Button>
             <ComboBox fx:id="settingsComboBox" layoutX="437.0" layoutY="16.0" prefWidth="150.0" promptText="Settings" style="-fx-background-color: Red; -fx-border-color: white;" />
-            <ScrollPane layoutX="65.0" layoutY="258.0" prefHeight="287.0" prefWidth="225.0">
+            <ScrollPane layoutX="408.0" layoutY="233.0" prefHeight="287.0" prefWidth="225.0">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="205.0">
                      <children>
@@ -40,7 +39,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="paidCOntentButton" mnemonicParsing="false" onAction="#paidCOntentButtonOnCLick" prefHeight="52.0" prefWidth="156.0" text="View Paid Contents" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="View Movies" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -50,7 +49,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="trailersButton" mnemonicParsing="false" onAction="#trailersButtonOnClk" prefHeight="52.0" prefWidth="156.0" text="Upcoming Trailers" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Upcoming Trailers" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -60,7 +59,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="trailerInfos" mnemonicParsing="false" onAction="#trailerInfosOnCLk" prefHeight="52.0" prefWidth="156.0" text="Upcoming Trailer Info" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Upcoming Trailer Info" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -71,7 +70,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="recomendButton" mnemonicParsing="false" onAction="#recomendButtonOnClk" prefHeight="52.0" prefWidth="156.0" text="Recommendations" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Recommendations" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -81,7 +80,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="BillingButton" mnemonicParsing="false" onAction="#BillingButtonOnClk" prefHeight="52.0" prefWidth="156.0" text="Billing" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Billing" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -91,7 +90,7 @@
                               <HBox prefHeight="36.0" prefWidth="215.0">
                                  <children>
                                     <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
-                                    <Button fx:id="termsButton" mnemonicParsing="false" onAction="#TermsOnClicl" prefHeight="52.0" prefWidth="156.0" text="Terms and Policy" textFill="RED">
+                                    <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Terms and Policy" textFill="RED">
                                        <font>
                                           <Font name="Gabriola" size="18.0" />
                                        </font>
@@ -104,21 +103,6 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
-            <ImageView fitHeight="342.0" fitWidth="337.0" layoutX="34.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/connecting-to-netflix-live-dcpzz75nzkdoey5y.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="387.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/download%20(4).jpeg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="281.0" fitWidth="211.0" layoutX="388.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/images.jpeg" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </content>

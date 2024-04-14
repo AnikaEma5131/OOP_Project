@@ -6,14 +6,19 @@ package Ema;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 
 /**
  * FXML Controller class
  *
  * @author EMA
  */
-public class WriteSubscriberTermsController implements Initializable {
+public class subsDashController implements Initializable {
+
+    @FXML
+    private ComboBox<?> settingsComboBox;
 
     /**
      * Initializes the controller class.
