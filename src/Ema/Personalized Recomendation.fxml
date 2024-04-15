@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.PersonalizedRecomendationController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="665.0" style="-fx-background-color: #ffa1a1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.PersonalizedRecomendationController">
    <children>
       <TextField fx:id="ConNoTextFeild" layoutX="151.0" layoutY="52.0" />
       <TextField fx:id="ConnameTextFeild" layoutX="151.0" layoutY="93.0" />
@@ -23,13 +23,13 @@
       <Label layoutX="31.0" layoutY="97.0" text="Content name" />
       <Label layoutX="31.0" layoutY="142.0" text="Content price" />
       <Label layoutX="382.0" layoutY="58.0" text="Manufacturer name" />
-      <TableView fx:id="productScTableview" layoutX="31.0" layoutY="186.0" prefHeight="200.0" prefWidth="626.0">
+      <TableView fx:id="productScTableview" layoutX="31.0" layoutY="186.0" prefHeight="169.0" prefWidth="631.0">
         <columns>
           <TableColumn fx:id="ConNoCol" prefWidth="75.0" text="Content no." />
           <TableColumn fx:id="ConNAmeCol" prefWidth="94.0" text="Content  name" />
             <TableColumn fx:id="ConPriceCol" prefWidth="98.0" text="Content price" />
             <TableColumn fx:id="ManufacturerNameCOl" prefWidth="137.0" text="Manufacturer name" />
-            <TableColumn fx:id="dateOFManuFacture" prefWidth="128.0" text="Date of manufacture" />
+            <TableColumn fx:id="dateOFManuFacture" prefWidth="128.0" text="Date Of relelase" />
             <TableColumn fx:id="dateofexpiry" prefWidth="93.0" text="offer ends" />
         </columns>
       </TableView>
@@ -40,5 +40,6 @@
       </Label>
       <Button layoutX="349.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadDataToTableviewOnCDlick" text="Load data to table view" />
       <Button layoutX="500.0" layoutY="18.0" mnemonicParsing="false" onAction="#ConToBinFIle" text="Add items to recomenndation.bin" />
+      <Button fx:id="goBackButton" layoutX="327.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBackButtonOnClicked" text="Go Back" />
    </children>
 </AnchorPane>

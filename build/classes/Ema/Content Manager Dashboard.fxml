@@ -56,7 +56,10 @@
                         </Label>
                     </children>
                 </HBox>
-            <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/netflix%20(1).gif" />
+               </image></ImageView>
                 <!-- User Information Labels -->
                 <Label fx:id="userName" prefHeight="41.0" prefWidth="313.0" text="Username:" textFill="WHITE">
                     <font>

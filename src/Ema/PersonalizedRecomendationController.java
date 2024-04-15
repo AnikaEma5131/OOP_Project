@@ -1,6 +1,7 @@
 
 package Ema;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,14 +11,19 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 
 public class PersonalizedRecomendationController implements Initializable {
@@ -54,6 +60,8 @@ public class PersonalizedRecomendationController implements Initializable {
      private TableColumn<Recommendation, String> ConNAmeCol;
     @FXML
        private TableColumn<Recommendation, Float>  ConPriceCol;
+    @FXML
+    private Button goBackButton;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -167,6 +175,20 @@ public class PersonalizedRecomendationController implements Initializable {
         }
     }
     return true; // Recommendation number is unique
+    }
+
+    @FXML
+    private void goBackButtonOnClicked(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Content Manager Dashboard.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) goBackButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 

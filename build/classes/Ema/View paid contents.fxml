@@ -13,7 +13,7 @@
   <tabs>
     <Tab text="View">
       <content>
-        <AnchorPane prefHeight="466.0" prefWidth="600.0">
+        <AnchorPane prefHeight="466.0" prefWidth="600.0" style="-fx-background-color: #ffa1a1;">
                <children>
                   <Label layoutX="7.0" layoutY="6.0" text="Select Video Title" />
                   <ComboBox fx:id="titleComboBox" layoutX="105.0" layoutY="2.0" onAction="#selectVideoTitle" prefHeight="25.0" prefWidth="122.0" />
@@ -30,6 +30,7 @@
                      <font>
                         <Font name="Sitka Small Bold" size="13.0" />
                      </font></Button>
+                  <Button fx:id="goBackButton" layoutX="424.0" layoutY="406.0" mnemonicParsing="false" onAction="#goBackButtonOnClicked" style="-fx-background-color: red;" text="Go Back" textFill="WHITE" />
                </children></AnchorPane>
       </content>
     </Tab>
