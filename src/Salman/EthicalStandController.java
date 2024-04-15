@@ -9,13 +9,23 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
- * @author EMA
+ * @author ROG
  */
-public class GeneralViewerDashboardController implements Initializable {
+public class EthicalStandController implements Initializable {
+
+    @FXML
+    private TextField textfComment;
+    @FXML
+    private TextArea textaComment;
+    @FXML
+    private Button buttonD;
 
     /**
      * Initializes the controller class.
@@ -26,19 +36,11 @@ public class GeneralViewerDashboardController implements Initializable {
     }    
 
     @FXML
-    private void Parental(ActionEvent event) {
-    }
-
-    @FXML
-    private void Merch(ActionEvent event) {
-    }
-
-    @FXML
-    private void Shows(ActionEvent event) {
-    }
-
-    @FXML
-    private void Upgrade(ActionEvent event) {
+    private void handleButtonAction(ActionEvent event) {
+        String write=textfComment.getText();
+        textaComment.appendText(write+"\n");
+        
+    
     }
     
 }
