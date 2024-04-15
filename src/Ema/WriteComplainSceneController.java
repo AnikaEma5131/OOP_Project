@@ -4,20 +4,13 @@
  */
 package Ema;
 
-import java.io.IOException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -25,39 +18,12 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
-
-import javafx.fxml.Initializable;
-
-import javafx.scene.control.TextField;
-
-import javafx.fxml.FXML;
-
-import javafx.fxml.FXML;
-
+/**
+ * FXML Controller class
+ *
+ * @author EMA
+ */
 public class WriteComplainSceneController implements Initializable {
 
     @FXML
@@ -73,46 +39,36 @@ public class WriteComplainSceneController implements Initializable {
     @FXML
     private TableView<FeedbackManager.Feedback> feedbackTableView;
     @FXML
-    private TableColumn<FeedbackManager.Feedback, String> customerIDCol;
+    private TableColumn<FeedbackManager.Feedback , String> customerIDCol;
     @FXML
-    private TableColumn<FeedbackManager.Feedback, String> customerNameCol;
+    private TableColumn<FeedbackManager.Feedback , String> customerNameCol;
     @FXML
-    private TableColumn<FeedbackManager.Feedback, String> typeOfComCol;
+    private TableColumn<FeedbackManager.Feedback , String> typeOfComCol;
     @FXML
-    private TableColumn<FeedbackManager.Feedback, String> writtenComCol;
-    private PieChart complaintPieChart; // Initialize the PieChart here
-
-
+    private TableColumn<FeedbackManager.Feedback , String> writtenComCol;
+    
     private FeedbackManager feedbackManager;
     private ObservableList<FeedbackManager.Feedback> feedbackHistory;
+    
+    
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         feedbackManager = new FeedbackManager();
-        typeOfComplainComboBox.getItems().addAll("Technical Issues", "Copy Write Content", "Others");
-
+        
+        typeOfComplainComboBox.getItems().addAll("Technical Issues", "Payment Issues", "Copyright Issues" ,"Others");
         customerIDCol.setCellValueFactory(new PropertyValueFactory<>("customerID"));
         customerNameCol.setCellValueFactory(new PropertyValueFactory<>("customerName"));
         typeOfComCol.setCellValueFactory(new PropertyValueFactory<>("typeOfComplain"));
         writtenComCol.setCellValueFactory(new PropertyValueFactory<>("writtenComplain"));
-        
-        // Initialize the pie chart
-        initializePieChart();
-    }
+    }    
 
     @FXML
     private void goBackButtonOnClicked(ActionEvent event) {
-        
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("SubscriberDashboard.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage currentStage = (Stage) goBackButton.getScene().getWindow();
-            currentStage.setScene(scene);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        
     }
 
     @FXML
@@ -125,53 +81,31 @@ public class WriteComplainSceneController implements Initializable {
         feedbackManager.sendFeedback(customerID, customerName, typeOfComplain, writtenComplain);
 
         // Update TableView
-        //feedbackHistory.setAll(feedbackManager.getFeedbackHistory());
-        showAlert(Alert.AlertType.INFORMATION,"Feedback sent","Your Feedback Has Been Successfully Sent , wait for our customer care survice to reach you out");
+        feedbackHistory.setAll(feedbackManager.getFeedbackHistory());
         
-        // Update the pie chart
-        initializePieChart();
+        showAlert(Alert.AlertType.INFORMATION, "Feedback Sent", "Your feedback has been successfully sent.");
     }
-    
-    private void showAlert(Alert.AlertType type , String title , String message){
-        
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    
-    }
-    
-    private void initializePieChart() {
-        ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
 
-        // Count occurrences of each type of complaint
-        Map<String, Integer> complaintCounts = new HashMap<>();
-        for (FeedbackManager.Feedback feedback : feedbackManager.getFeedbackHistory()) {
-            String typeOfComplaint = feedback.getTypeOfComplain();
-            complaintCounts.put(typeOfComplaint, complaintCounts.getOrDefault(typeOfComplaint, 0) + 1);
-        }
-
-        // Add data to pie chart
-        for (Map.Entry<String, Integer> entry : complaintCounts.entrySet()) {
-            pieChartData.add(new PieChart.Data(entry.getKey(), entry.getValue()));
-        }
-
-        complaintPieChart.setData(pieChartData);
+    @FXML
+    private void showFeedbackOnClicked(ActionEvent event) {
+        // Load feedback history from binary file
+        feedbackManager.loadFeedbackHistory("feedback_history.bin");
+        // Update feedback history TableView
+        feedbackHistory = FXCollections.observableArrayList(feedbackManager.getFeedbackHistory());
+        feedbackTableView.setItems(feedbackHistory);
     }
 
     @FXML
     private void loadCompChartOnClick(ActionEvent event) {
-        // Reload the pie chart
-        initializePieChart();
     }
-
-
-
-    @FXML
-    private void showFeedbackOnClicked(ActionEvent event) {
-        feedbackHistory.setAll(feedbackManager.getFeedbackHistory());
-    }
-
+    
+    
+    private void showAlert(Alert.AlertType type, String title, String message) {
+    Alert alert = new Alert(type);
+    alert.setTitle(title);
+    alert.setHeaderText(null);
+    alert.setContentText(message);
+    alert.showAndWait();
+}
     
 }

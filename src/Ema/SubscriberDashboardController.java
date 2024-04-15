@@ -31,10 +31,12 @@ public class SubscriberDashboardController implements Initializable {
     @FXML
     private Button recommendationButton;
     @FXML
-    private Button goBackButton;
-    @FXML
     private Button paymentButton;
-    private Button helpCenterButton;
+    
+    @FXML
+    private Button logoutButton;
+    @FXML
+    private Button sendCustomerFeedbackButton;
 
     /**
      * Initializes the controller class.
@@ -87,21 +89,6 @@ public class SubscriberDashboardController implements Initializable {
     }
 
     @FXML
-    private void goBcakOncLick(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/LoginSc.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage currentStage = (Stage) goBackButton.getScene().getWindow();
-            currentStage.setScene(scene);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    
-
-    }
-
-    @FXML
     private void viewPaymentSystemOnClick(ActionEvent event) {
         
         try {
@@ -117,34 +104,35 @@ public class SubscriberDashboardController implements Initializable {
         
     }
 
+   
     @FXML
-    private void writeComplainOnClick(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FeedbackScene.fxml"));
+    private void sendFeedbackOnClick(ActionEvent event) {
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Write Complain Scene.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
-            Stage currentStage = (Stage) helpCenterButton.getScene().getWindow();
+            Stage currentStage = (Stage) sendCustomerFeedbackButton.getScene().getWindow();
             currentStage.setScene(scene);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+        
+        
+    
 
     @FXML
-    private void contactCustomerCbuttonOnClick(ActionEvent event) {
-        
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FeedbackScene.fxml"));
+    private void logOutButtonOnClick(ActionEvent event) {
+         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/LoginSc.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
-            Stage currentStage = (Stage) helpCenterButton.getScene().getWindow();
+            Stage currentStage = (Stage) logoutButton.getScene().getWindow();
             currentStage.setScene(scene);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
-        
-        
+    
     }
     
 }

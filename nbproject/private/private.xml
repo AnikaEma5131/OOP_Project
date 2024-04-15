@@ -5,10 +5,21 @@
         <group>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/FeedbackManager.java</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/ContentManagerDashController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/SubscriberPaymentSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/WriteComplainSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/Upload%20Movies%20Scene.fxml</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/UploadTrailerSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/UploadContentsController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/VideoInfo.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/VIewTrailerController.java</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/SubscriberDashboardController.java</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/Write%20Complain%20Scene.fxml</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/Ema/WriteComplainSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/Upload%20Trailer%20Scene.fxml</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/UploadMoviesSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/mainPkg/LoginScController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/Content%20Recommendation.fxml</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/feedbackScene.fxml</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/View%20Trailer.fxml</file>
         </group>
     </open-files>
 </project-private>
