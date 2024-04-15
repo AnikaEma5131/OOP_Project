@@ -91,13 +91,13 @@ public class LoginScController implements Initializable {
                 currentStage.setScene(scene);
             }
             if (userType.equals("General Viewer")) {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Salman/GeneralViewerDashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Salman/General Viewer Dashboard.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 currentStage.setScene(scene);
             }
             if (userType.equals("Legal Advisor")) {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Salman/LegalAdvisorDashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Salman/Legal Advisor Dashboard.fxml"));
                 Parent root = loader.load();
                 Scene scene = new Scene(root);
                 currentStage.setScene(scene);
