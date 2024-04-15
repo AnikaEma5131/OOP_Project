@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="701.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewBillingHistorySceneController">
+   <children>
+      <Label layoutX="146.0" layoutY="108.0" text="Enter User ID:">
+         <font>
+            <Font name="Dubai Medium" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="showBillsButton" layoutX="283.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Show Bills">
+         <font>
+            <Font name="Dubai Medium" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userIdTextField" layoutX="243.0" layoutY="109.0" prefHeight="25.0" prefWidth="208.0" />
+      <Label fx:id="billsLabel" layoutX="103.0" layoutY="269.0" prefHeight="172.0" prefWidth="519.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -3,23 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SceneChange.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Salman/Legal%20Advisor%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Ema/SubscriberDashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Tasdid/Content%20Provider%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/LoginScController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Tasdid/Viewer%20Manager%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/Sign%20Up.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SignUpController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SignUpFile.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/LoginSc.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Mahir/AccountantDashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/main.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/AppendableObjectOutputStream.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Salman/General%20Viewer%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/User.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/HomeScreenController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Mahir/Technical%20Administrator%20Dashboard.fxml</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/UserFeedbackSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/Bill.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/ViewBillingHistorySceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/mainPkg/User.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/mainPkg/LoginScController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/ManagingInvoiceSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/TechnicalAdministratorDashboardController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/RevenueReportSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/userFeedbackScene.fxml</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Ema/SubscriberDashboardController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/CalculatingTaxSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/AccountantDashboardSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/DevelopmentProgressSceneController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/Mahir/Salary.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/mainPkg/HomeScreenController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/OOP_Project/src/mainPkg/main.java</file>
         </group>
     </open-files>
 </project-private>
