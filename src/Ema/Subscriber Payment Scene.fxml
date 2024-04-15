@@ -46,8 +46,9 @@
             <Button fx:id="goBackButton" layoutX="289.0" layoutY="373.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" style="-fx-background-color: #e1364a;" text="Go Back" />
             <TextField fx:id="AmountTextField" layoutX="262.0" layoutY="85.0" prefHeight="25.0" prefWidth="77.0" />
             <Label layoutX="166.0" layoutY="89.0" text="Enter Amount" />
-            <Button layoutX="253.0" layoutY="131.0" mnemonicParsing="false" onAction="#MakePaymentOnClick" text="Make Payment" />
-            <Button layoutX="22.0" layoutY="131.0" mnemonicParsing="false" onAction="#showPaymentHistoryOnClick" text="See Payment History " />
+            <Button layoutX="253.0" layoutY="119.0" mnemonicParsing="false" onAction="#MakePaymentOnClick" text="Make Payment" />
+            <Button layoutX="20.0" layoutY="119.0" mnemonicParsing="false" onAction="#showPaymentHistoryOnClick" text="See Payment History " />
+            <Button layoutX="68.0" layoutY="373.0" mnemonicParsing="false" onAction="#downloadpdfOnClick" style="-fx-background-color: red;" text="Download pdf of payment History" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

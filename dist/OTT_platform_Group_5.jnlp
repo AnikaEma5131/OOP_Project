@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="OTT_platform_Group_5.jar" size="9900819" download="eager" />
+    <jar href="OTT_platform_Group_5.jar" size="9906702" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="mainPkg.main"  name="OTT_platform_Group_5" />
   <update check="always"/>

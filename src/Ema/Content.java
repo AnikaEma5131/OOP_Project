@@ -34,6 +34,9 @@ public class Content implements Serializable{
         this.VideoData = VideoData;
     }
     
-    
+    public static boolean giveFeedback(int subscriberId, String subscriberName, String feedback, int rating) {
+        FeedbackWriter fw = new FeedbackWriter(subscriberId, subscriberName, feedback, rating);
+        return fw.writeFeedback();
+    }
     
 }

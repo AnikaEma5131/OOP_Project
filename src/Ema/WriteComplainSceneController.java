@@ -4,20 +4,27 @@
  */
 package Ema;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -49,6 +56,19 @@ public class WriteComplainSceneController implements Initializable {
     
     private FeedbackManager feedbackManager;
     private ObservableList<FeedbackManager.Feedback> feedbackHistory;
+    @FXML
+    private RadioButton techRadioButton;
+    @FXML
+    private RadioButton paymentRadioButton;
+    @FXML
+    private RadioButton cprightRadioButton;
+    @FXML
+    private RadioButton othersRadioButton;
+    @FXML
+    private RadioButton allRadioButton;
+    
+    
+    ToggleGroup tg;
     
     
 
@@ -59,7 +79,10 @@ public class WriteComplainSceneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         feedbackManager = new FeedbackManager();
-        
+        tg = new ToggleGroup();
+        techRadioButton.setToggleGroup(tg);
+        paymentRadioButton.setToggleGroup(tg);
+        othersRadioButton.setToggleGroup(tg);
         typeOfComplainComboBox.getItems().addAll("Technical Issues", "Payment Issues", "Copyright Issues" ,"Others");
         customerIDCol.setCellValueFactory(new PropertyValueFactory<>("customerID"));
         customerNameCol.setCellValueFactory(new PropertyValueFactory<>("customerName"));
@@ -69,7 +92,17 @@ public class WriteComplainSceneController implements Initializable {
 
     @FXML
     private void goBackButtonOnClicked(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SubscriberDashboard.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) goBackButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+    
 
     @FXML
     private void sendFeedBackOnCliked(ActionEvent event) {
@@ -88,7 +121,7 @@ public class WriteComplainSceneController implements Initializable {
 
     @FXML
     private void showFeedbackOnClicked(ActionEvent event) {
-        // Load feedback history from binary file
+        //Load feedback history from binary file
         feedbackManager.loadFeedbackHistory("feedback_history.bin");
         // Update feedback history TableView
         feedbackHistory = FXCollections.observableArrayList(feedbackManager.getFeedbackHistory());

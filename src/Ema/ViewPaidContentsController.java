@@ -35,6 +35,8 @@ public class ViewPaidContentsController implements Initializable {
     private static final String VIDEOS_FOLDER = "videos";
     @FXML
     private Button goBackButton;
+    @FXML
+    private Button loadReivewInterfaceButton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -161,6 +163,20 @@ public class ViewPaidContentsController implements Initializable {
                     break;
                 }
             }
+        }
+    }
+
+    @FXML
+    private void LoadRatingInterfaceOnClick(ActionEvent event) {
+        
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("ContentFeedbackScene.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) loadReivewInterfaceButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

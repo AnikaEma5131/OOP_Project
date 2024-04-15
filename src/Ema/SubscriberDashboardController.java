@@ -78,7 +78,7 @@ public class SubscriberDashboardController implements Initializable {
     @FXML
     private void viewRecommendationOnClick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Personalized Recomendation.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("PersonalizedRecomendation.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) recommendationButton.getScene().getWindow();

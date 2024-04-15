@@ -25,6 +25,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+
 /**
  * FXML Controller class
  *
@@ -109,5 +110,10 @@ public class SubscriberPaymentSceneController implements Initializable {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }
+
+    @FXML
+    private void downloadpdfOnClick(ActionEvent event) {
+        
     }
 }
