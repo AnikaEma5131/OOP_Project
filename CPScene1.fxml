@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tasdid.CPScene1Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="14.0" prefHeight="42.0" prefWidth="295.0" style="-fx-border-color: blue;" text="Content Upload">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="77.0" prefHeight="33.0" prefWidth="105.0" text="Content Name :" />
+      <Label layoutX="27.0" layoutY="127.0" prefHeight="33.0" prefWidth="105.0" text="Content URL :" />
+      <Label layoutX="27.0" layoutY="176.0" prefHeight="33.0" prefWidth="105.0" text="Content ID :" />
+      <TextField fx:id="contentnameTF" layoutX="139.0" layoutY="77.0" prefHeight="33.0" prefWidth="261.0" />
+      <TextField fx:id="contenturlTF" layoutX="139.0" layoutY="127.0" prefHeight="33.0" prefWidth="261.0" />
+      <TextField fx:id="contentidTF" layoutX="139.0" layoutY="176.0" prefHeight="33.0" prefWidth="261.0" />
+      <Button layoutX="469.0" layoutY="123.0" mnemonicParsing="false" onAction="#uploadbuttonOnAction" prefHeight="42.0" prefWidth="112.0" text="Upload" />
+      <TableView fx:id="contentinfoTV" layoutX="35.0" layoutY="287.0" prefHeight="241.0" prefWidth="618.0">
+        <columns>
+          <TableColumn fx:id="contentnameTC" prefWidth="254.0" text="Content Name" />
+          <TableColumn fx:id="contenturlTC" prefWidth="217.0" text="Content URL" />
+            <TableColumn fx:id="contentidTC" prefWidth="146.0" text="Content ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="235.0" prefHeight="33.0" prefWidth="211.0" text="Content Information Table :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="597.0" layoutY="535.0" mnemonicParsing="false" onAction="#returnbuttonOnAction" prefHeight="42.0" prefWidth="112.0" style="-fx-border-color: black;" text="Return" />
+   </children>
+</AnchorPane>
