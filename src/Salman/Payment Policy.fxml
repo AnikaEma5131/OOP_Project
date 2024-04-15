@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Salman.PaymentPolicyController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="53.0" layoutY="41.0" prefHeight="31.0" prefWidth="137.0" text="Payment Policy">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfComment" layoutX="17.0" layoutY="114.0" />
+            <TextArea fx:id="textaComment" layoutX="177.0" layoutY="72.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="78.0" text="Write" />
+            <Button fx:id="buttonD" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Done" />
+            <Button layoutX="17.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -9,13 +9,20 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
- * @author EMA
+ * @author ROG
  */
-public class GeneralViewerDashboardController implements Initializable {
+public class ParentalConController implements Initializable {
+
+    @FXML
+    private TextField monTextField;
+    @FXML
+    private Button monButton;
 
     /**
      * Initializes the controller class.
@@ -24,21 +31,13 @@ public class GeneralViewerDashboardController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    int age;
 
     @FXML
-    private void Parental(ActionEvent event) {
-    }
-
-    @FXML
-    private void Merch(ActionEvent event) {
-    }
-
-    @FXML
-    private void Shows(ActionEvent event) {
-    }
-
-    @FXML
-    private void Upgrade(ActionEvent event) {
+    private void done(ActionEvent event) {
+        age=Integer.parseInt(monTextField.getText());
+        System.out.println(age);
+        
     }
     
 }
