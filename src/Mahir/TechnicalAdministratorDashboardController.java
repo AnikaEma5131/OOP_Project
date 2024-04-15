@@ -117,6 +117,14 @@ public class TechnicalAdministratorDashboardController implements Initializable 
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void checkInfastructureButtonOnClicked(ActionEvent event) {
+    }
+
+    @FXML
+    private void makeCrashReportButtonOnClicked(ActionEvent event) {
+    }
     }
 
 
