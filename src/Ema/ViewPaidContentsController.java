@@ -16,8 +16,12 @@ import javafx.scene.media.MediaView;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 
 public class ViewPaidContentsController implements Initializable {
@@ -136,6 +140,15 @@ public class ViewPaidContentsController implements Initializable {
     
     @FXML
     private void goBackButtonOnClicked(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SubscriberDashboard.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) goBackButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

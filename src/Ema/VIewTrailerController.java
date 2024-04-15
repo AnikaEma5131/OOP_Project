@@ -114,7 +114,7 @@ public class VIewTrailerController implements Initializable {
     @FXML
     private void goBackButtonOnClicked(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Subscriber Dashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SubscriberDashboard.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) goBackButton.getScene().getWindow();

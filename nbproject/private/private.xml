@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/FeedbackManager.java</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/ContentManagerDashController.java</file>
             <file>file:/F:/git%20merged/OOP_Project/src/Ema/SubscriberDashboardController.java</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/Ema/ViewPaidContentsController.java</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/Ema/SendUserFeedbackSceneController.java</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/Ema/VIewTrailerController.java</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/mainPkg/LoginScController.java</file>
-            <file>file:/F:/git%20merged/OOP_Project/src/Ema/Send%20User%20Feedback%20Scene.fxml</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/Write%20Complain%20Scene.fxml</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/WriteComplainSceneController.java</file>
+            <file>file:/F:/git%20merged/OOP_Project/src/Ema/feedbackScene.fxml</file>
         </group>
     </open-files>
 </project-private>

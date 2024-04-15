@@ -34,7 +34,6 @@ public class SubscriberDashboardController implements Initializable {
     private Button goBackButton;
     @FXML
     private Button paymentButton;
-    @FXML
     private Button helpCenterButton;
 
     /**
@@ -90,7 +89,7 @@ public class SubscriberDashboardController implements Initializable {
     @FXML
     private void goBcakOncLick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("loginSc.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/loginSc.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) goBackButton.getScene().getWindow();
@@ -118,10 +117,9 @@ public class SubscriberDashboardController implements Initializable {
     }
 
     @FXML
-    private void contactHelpCenterOnClick(ActionEvent event) {
-        
+    private void writeComplainOnClick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Send User Feedback Scene.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FeedbackScene.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) helpCenterButton.getScene().getWindow();
@@ -129,6 +127,23 @@ public class SubscriberDashboardController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void contactCustomerCbuttonOnClick(ActionEvent event) {
+        
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FeedbackScene.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) helpCenterButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        
+        
     }
     
 }
