@@ -89,7 +89,7 @@ public class SubscriberDashboardController implements Initializable {
     @FXML
     private void goBcakOncLick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/loginSc.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/mainPkg/LoginSc.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) goBackButton.getScene().getWindow();
@@ -97,6 +97,7 @@ public class SubscriberDashboardController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    
 
     }
 

@@ -31,7 +31,7 @@ public class UploadContentsController implements Initializable {
     @FXML
     private DatePicker uploadDate;
     @FXML
-    private ComboBox<?> contenttypecombopbox;
+    private ComboBox<String> contenttypecombopbox;
     @FXML
     private Button goback;
 
@@ -40,6 +40,8 @@ public class UploadContentsController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        contenttypecombopbox.getItems().addAll("Paid Content","Trailer");
         // TODO
     }    
 

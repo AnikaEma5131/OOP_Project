@@ -9,12 +9,16 @@
 
 <BorderPane prefHeight="285.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ema.UploadMoviesSceneController">
     <center>
-        <VBox alignment="CENTER" spacing="10" style="-fx-background-color: #98ccfa;">
+        <VBox alignment="CENTER" spacing="10">
          <Label />
-            <Label text="Upload Paid contents">
+            <Label text="Upload MP4 Video">
             <font>
                <Font name="Franklin Gothic Medium" size="18.0" />
             </font></Label>
+            <Button onAction="#chooseVideo" text="Select video and fetch title">
+            <font>
+               <Font name="Franklin Gothic Medium" size="18.0" />
+            </font></Button>
             <TextField fx:id="titleField" promptText="Enter Title" />
             <Button onAction="#uploadVideo" text="Upload video">
             <font>
