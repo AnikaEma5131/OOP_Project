@@ -8,7 +8,19 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="OTT_platform_Group_5.jar" size="8192244" download="eager" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <jar href="OTT_platform_Group_5.jar" size="9849131" download="eager" />
+=======
+    <jar href="OTT_platform_Group_5.jar" size="9714737" download="eager" />
+>>>>>>> parent of 784708f (changes in upload content)
+=======
+    <jar href="OTT_platform_Group_5.jar" size="9716198" download="eager" />
+>>>>>>> parent of a0d1608 (update subscriber)
+=======
+    <jar href="OTT_platform_Group_5.jar" size="9701816" download="eager" />
+>>>>>>> parent of c758b7a (done)
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="mainPkg.main"  name="OTT_platform_Group_5" />
   <update check="always"/>

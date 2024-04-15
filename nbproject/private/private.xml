@@ -2,24 +2,54 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
+<<<<<<< HEAD
         <group>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SceneChange.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Salman/Legal%20Advisor%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Ema/SubscriberDashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Tasdid/Content%20Provider%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/LoginScController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Tasdid/Viewer%20Manager%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/Sign%20Up.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SignUpController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/SignUpFile.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/LoginSc.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Mahir/AccountantDashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/main.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/AppendableObjectOutputStream.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Salman/General%20Viewer%20Dashboard.fxml</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/User.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/mainPkg/HomeScreenController.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/src/Mahir/Technical%20Administrator%20Dashboard.fxml</file>
+<<<<<<< HEAD
+            <file>file:/C:/Users/EMA/OneDrive/ドキュメント/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/AppendableObjectOutputStream.java</file>
+=======
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/View%20Trailer.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/UploadTrailerSceneController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Content.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Upload%20Contents.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/View%20paid%20contents.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/ViewPaidContentsController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Upload%20Movies%20Scene.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Upload%20Trailer%20Scene.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/UploadMoviesSceneController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/VideoInfo.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/UploadContentsController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/VIewTrailerController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Content%20Manager%20Dashboard.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/ContentManagerDashController.java</file>
+>>>>>>> parent of 784708f (changes in upload content)
         </group>
+=======
+        <group/>
+>>>>>>> parent of a0d1608 (update subscriber)
+=======
+        <group>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Reviews.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/SignUpFile.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/SignUpController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/HomeScreenController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/SubscriberPaymentDashboard.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/HomeScreen.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/User.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Content.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/MakePayment.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/LoginScController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/SubscriberDashboardController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/PaymentInfo.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/ContentReview.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/SceneChange.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/AppendableObjectOutputStream.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/ContentManagerDashboardController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/mainPkg/main.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/SubscriberPaymentDashboardController.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/Content.fxml</file>
+            <file>file:/D:/Documents/NetBeansProjects/OTT_platform_Group_5/OOP_Project/src/Ema/SubscriptionCancel.fxml</file>
+        </group>
+>>>>>>> parent of c758b7a (done)
     </open-files>
 </project-private>

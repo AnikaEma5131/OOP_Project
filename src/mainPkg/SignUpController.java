@@ -42,7 +42,7 @@ public class SignUpController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        userTypeComboBox.getItems().addAll("Content Manager","General Viewer"
+        userTypeComboBox.getItems().addAll("Content Manager","Premium Subscriber"
                 ,"Accountant","Technical Administrator"
                 ,"General Viewer"
                 ,"Legal Advisor",
@@ -53,7 +53,7 @@ public class SignUpController implements Initializable {
     @FXML
     private void goBackButtonOnClick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginSc.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScreen.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) goback.getScene().getWindow();
