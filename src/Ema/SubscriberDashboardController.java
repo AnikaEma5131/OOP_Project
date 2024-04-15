@@ -49,7 +49,7 @@ public class SubscriberDashboardController implements Initializable {
     @FXML
     private void viewContentOnClick(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("View Paid Content.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("View paid contents.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage currentStage = (Stage) viewPaidConButton.getScene().getWindow();
@@ -76,6 +76,15 @@ public class SubscriberDashboardController implements Initializable {
 
     @FXML
     private void viewRecommendationOnClick(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Personalized Recomendation.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) recommendationButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -94,10 +103,32 @@ public class SubscriberDashboardController implements Initializable {
 
     @FXML
     private void viewPaymentSystemOnClick(ActionEvent event) {
+        
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Subscriber Payment Scene.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) paymentButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        
     }
 
     @FXML
     private void contactHelpCenterOnClick(ActionEvent event) {
+        
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Send User Feedback Scene.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) helpCenterButton.getScene().getWindow();
+            currentStage.setScene(scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
 }

@@ -43,7 +43,7 @@
                   <TableColumn fx:id="PStatusTableCol" prefWidth="115.0" text="Payment Status" />
               </columns>
             </TableView>
-            <Button layoutX="289.0" layoutY="373.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" style="-fx-background-color: #e1364a;" text="Go Back" />
+            <Button fx:id="goBackButton" layoutX="289.0" layoutY="373.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" style="-fx-background-color: #e1364a;" text="Go Back" />
             <TextField fx:id="AmountTextField" layoutX="262.0" layoutY="85.0" prefHeight="25.0" prefWidth="77.0" />
             <Label layoutX="166.0" layoutY="89.0" text="Enter Amount" />
             <Button layoutX="253.0" layoutY="131.0" mnemonicParsing="false" onAction="#MakePaymentOnClick" text="Make Payment" />
